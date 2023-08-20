@@ -12,7 +12,7 @@ import ProductDetails from "./pages/ProductDetails";
 
 const routes = createBrowserRouter([
   {
-    path: "/root",
+    path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
