@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function Homepage() {
   const navigation = useNavigate();
   function navigationHandler() {
-    navigation("/products");
+    navigation("products");
   }
   return (
     <div>

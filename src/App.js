@@ -12,13 +12,13 @@ import ProductDetails from "./pages/ProductDetails";
 
 const routes = createBrowserRouter([
   {
-    path: "/",
+    path: "/root",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Homepage /> },
-      { path: "/products", element: <ProductsPage /> },
-      { path: "/products/:productId", element: <ProductDetails /> }, //dynamic paths using ":"
+      { path: "", element: <Homepage /> },
+      { path: "products", element: <ProductsPage /> },
+      { path: "products/:productId", element: <ProductDetails /> }, //dynamic paths using ":"
     ],
   },
 ]);

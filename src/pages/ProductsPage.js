@@ -14,7 +14,7 @@ function ProductsPage() {
         {PRODUCTS.map((product) => {
           return (
             <li>
-              <Link to={`/products/${product.id}`}>{product.title}</Link>
+              <Link to={product.id}>{product.title}</Link>
             </li>
           );
         })}
